@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+    padding: 10px;
+    height: 100vh;
+    background: url(/img/future-background.gif) no-repeat center bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+} 
+
+form {
+    background-color: rgba(255, 255, 255, 0);
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+input {
+    margin: 25px 0px;
+    padding: 3px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    box-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    
+}
+
+input[type="text"], input[type="password"]{
+    background-color: #00000000;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 red, 1px 1px 0 red, 0 0 10px #eeeeee, 0 0 20px red, 0 0 20px red, 0 0 30px red, 
+    0 0 40px red, 0 0 50px red, 0 0 60px red;
+    cursor: pointer;
+    box-shadow: none;
+    
+}
+h6 {
+    margin-top: 10px;
+    text-shadow:  0 0 10px black, 0 0 20px black, 0 0 20px black;
+}
+p {
+    margin-top: 20px;
+}
+
+a {
+    text-shadow:  0 0 10px #eeeeee, 0 0 20px blue, 0 0 20px blue, 0 0 30px blue, 
+    0 0 40px blue, 0 0 50px blue, 0 0 60px blue;
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    text-shadow: 0 0 10px rgb(255, 47, 47), 0 0 20px rgb(255, 47, 47), 0 0 20px rgb(255, 47, 47), 0 0 30px rgb(255, 47, 47), 
+    0 0 40px rgb(255, 47, 47), 0 0 50px rgb(255, 47, 47), 0 0 60px rgb(255, 47, 47);
+}
+a:hover {
+    text-shadow:  0 0 10px #eeeeee, 0 0 20px rgb(47, 47, 255), 0 0 20px rgb(47, 47, 255), 0 0 30px rgb(47, 47, 255), 
+    0 0 40px rgb(47, 47, 255), 0 0 50px rgb(47, 47, 255), 0 0 60px rgb(47, 47, 255);
+}
+.glow {
+    font-size: 70px;
+    color: rgba(255, 205, 213, 0.493);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 
+                   0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+
+    div {
+        width: 100%;
+    }
+    form {
+        width: 70%;
+    }
+    input {
+        width: 90%
+    }
+    .glow {
+        font-size: 30px;
+    }
+}
